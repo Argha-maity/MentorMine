@@ -1,0 +1,152 @@
+.mm-signup {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--mm-bg);
+  min-height: 100%;
+}
+
+.mm-signup__logo {
+  width: 56px;
+  height: 56px;
+  background: var(--mm-primary);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 16px var(--mm-primary-light);
+}
+
+.mm-signup__logo svg {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.mm-signup__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--mm-fg);
+  margin-bottom: 8px;
+}
+
+.mm-signup__subtitle {
+  font-size: 14px;
+  color: var(--mm-muted-fg);
+  margin-bottom: 32px;
+}
+
+/* Feature Grid */
+.mm-signup__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.mm-feature-card {
+  background: var(--mm-card);
+  padding: 16px 8px;
+  border-radius: 12px;
+  border: 1px solid var(--mm-border);
+}
+
+.mm-feature-card__icon {
+  font-size: 20px;
+  margin-bottom: 8px;
+  background: var(--mm-secondary);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto 10px;
+}
+
+.mm-feature-card h3 {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--mm-fg);
+}
+
+.mm-feature-card p {
+  font-size: 10px;
+  color: var(--mm-muted-fg);
+  line-height: 1.4;
+}
+
+/* Form Styling */
+.mm-signup__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mm-input-group {
+  position: relative;
+  width: 100%;
+}
+
+.mm-input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--mm-muted-fg);
+  pointer-events: none;
+}
+
+.mm-input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border-radius: var(--mm-radius);
+  border: 1px solid var(--mm-border);
+  color: var(--mm-fg) !important;
+  background-color: #ffffff;
+  background: var(--mm-card);
+  font-family: var(--mm-font);
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.mm-input-group input:focus {
+  outline: none;
+  border-color: var(--mm-primary);
+  background: white;
+  box-shadow: 0 0 0 3px var(--mm-primary-light);
+}
+
+.mm-signup__btn {
+  background: var(--mm-primary);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: var(--mm-radius);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.2s;
+  margin-top: 8px;
+}
+
+.mm-signup__btn:hover {
+  opacity: 0.9;
+}
+
+.mm-signup__footer {
+  margin-top: 24px;
+  font-size: 11px;
+  color: var(--mm-muted-fg);
+}
